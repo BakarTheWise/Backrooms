@@ -23,7 +23,7 @@ import Loader from './Loader';
 import EndCallButton from './EndCallButton';
 import { cn } from '@/lib/utils';
 
-import { Window, ChannelHeader, MessageList, MessageInput, Thread, LoadingIndicator } from 'stream-chat-react';
+import { Window, ChannelHeader, MessageList, MessageInput } from 'stream-chat-react';
 import ChannelProvider from '@/providers/ChannelProvider';
 
 type CallLayoutType = 'grid' | 'speaker-left' | 'speaker-right';
