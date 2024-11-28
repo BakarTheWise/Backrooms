@@ -53,7 +53,7 @@ const PersonalRoom = () => {
     router.push(`/meeting/${meetingId}?personal=true`);
   };
 
-  const meetingLink = `${'localhost:3000'}/meeting/${meetingId}?personal=true`;
+  const meetingLink = `${'backrooms-psi.vercel.app'}/meeting/${meetingId}?personal=true`;
 
   return (
     <section className="flex size-full flex-col gap-10 text-white">
