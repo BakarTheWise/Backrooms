@@ -55,6 +55,12 @@
 
 /* ==== clerk class override ===== */
 
+.cl-avatarBox {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgb(152, 152, 245);
+}
+
 .cl-userButtonPopoverActionButtonIcon {
   color: white;
 }
