@@ -1,6 +1,5 @@
 'use client'
 import { SignedIn, UserButton, useUser } from '@clerk/nextjs'
-import { Bell } from 'lucide-react'
 import React from 'react'
 
 const UserPanel = () => {

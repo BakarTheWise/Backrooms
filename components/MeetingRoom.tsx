@@ -26,12 +26,10 @@ import { cn } from '@/lib/utils';
 
 import { Window, MessageList, MessageInput } from 'stream-chat-react';
 import ChannelProvider from '@/providers/ChannelProvider';
-import { useUser } from '@clerk/nextjs';
 
 type CallLayoutType = 'grid' | 'speaker-left' | 'speaker-right';
 
 const MeetingRoom = () => {
-  const { user } = useUser();
   const { client } = useChatContext();
 
   const { id } = useParams();
