@@ -28,7 +28,6 @@ body,
 body {
   background-image: url('/images/bg-grad.png');
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -125,8 +124,12 @@ body {
 
 /* ==== clerk class override ===== */
 
-.cl-providerIcon-github {
-  filter: invert(1);
+.borderer {
+  border: 2px white solid;
+}
+
+.cl-providerIcon__github  {
+  filter: invert(1) !important;
 }
 
 .cl-avatarBox {
