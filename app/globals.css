@@ -8,7 +8,77 @@
   box-sizing: border-box;
 }
 
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+}
+
+.str-chat__list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* .messaging {
+  background-color: red;
+} */
+
+body {
+  background-image: url('/images/bg-grad.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* ======== stream css overrides ======== */
+/* .trans > * > * {
+  background: transparent !important;
+  
+} */
+ 
+.str-chat__list, .sidetrans, .str-video__participant-list, .str-chat__channel {
+  
+  background: none !important;
+  background: rgba(0, 0, 0, 0) !important;
+  backdrop-filter: blur(9px) !important;
+  -webkit-backdrop-filter: blur(9px) !important; 
+  color: white !important;
+
+}
+
+.str-chat__message-input {
+  background-color: #4c535b !important;
+  border-radius: 6px !important;
+  
+}
+
+.str-chat__message-textarea {
+  color: white !important;
+  
+}
+
+.str-chat__message-textarea-container {
+  border: none !important;
+  outline: none !important;
+}
+
+.str-chat__send-button {
+  fill: white !important;
+}
+
+.bordering {
+  box-shadow: 2px 2px 8px 0 2px;
+  border-radius: 12px;
+}
+/* .str-chat__channel {
+
+    background: none;
+    background-color: transparent !important;
+    color: white;
+  
+} */
 .str-video__call-stats {
   max-width: 500px;
   position: relative;
@@ -48,12 +118,16 @@
   -webkit-backdrop-filter: blur(4px);
 }
 .glassmorphism2 {
-  background: rgba(18, 17, 17, 0.25);
+  background: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
 
 /* ==== clerk class override ===== */
+
+.cl-providerIcon-github {
+  filter: invert(1);
+}
 
 .cl-avatarBox {
   width: 40px;
